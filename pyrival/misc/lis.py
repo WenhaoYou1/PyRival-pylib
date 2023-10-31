@@ -26,3 +26,9 @@ def lis(nums, cmp=lambda x, y: x < y):
         S[i], k = nums[k], P[k]
 
     return S
+
+def lds(nums):
+    """
+    Longest Decreasing Subsequence.
+    """
+    return lis(nums, cmp=lambda x, y: x > y)
